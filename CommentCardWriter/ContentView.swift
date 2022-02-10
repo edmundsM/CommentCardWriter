@@ -9,9 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var subjectNames = ["computer science","physics","maths","design"]
-    var enjoymentDescriptors = ["despise","dislike","am indifferent to","enjoy","love"]
-    var understandingDescriptors = ["awful", "bad", "average", "reasonable", "great"]
+    var understandingDescriptors = ["n awful"," bad"," sub-par"," rough","n average"," reasonable"," good", " great","n amazing"," wonderful"]
+    var enjoymentDescriptors = ["despise"," hate","dislike","am indifferent to","enjoy","really enjoy","love"]
     
     @State private var subject = ""
     @State private var subjectEnjoyment = 2.0
@@ -26,15 +25,17 @@ struct ContentView: View {
     
     var body: some View {
         Form {
-            VStack {
-                Text("If feel that I have a \(understandingDescriptors[Int(understanding)]) understanding of the content covered so far in \(subject.lowercased()). I \(enjoymentDescriptors[Int(subjectEnjoyment)]) the subject and... ")
-                    .frame(width: 300, height: 300, alignment: .center )
-                TextField("Subject name...", text: $subject)
-                Text("Understanding")
-                Slider(value: $understanding, in:0...4, step: 1)
-                Text("Enjoyment")
-                Slider(value: $subjectEnjoyment, in:0...4, step: 1)
+            Section {
+                Text("If feel that I have a\(understandingDescriptors[Int(understanding)]) understanding of the content covered so far in \(subject.lowercased()). I \(enjoymentDescriptors[Int(subjectEnjoyment)]) the subject and... ")
+                    .frame(width: 300, height: 300, alignment: .topLeading )
             }
+            Section {
+                TextField("Subject name...", text: $subject)
+            }
+            Text("Understanding")
+            Slider(value: $understanding, in:0...9, step: 1)
+            Text("Enjoyment")
+            Slider(value: $subjectEnjoyment, in:0...6, step: 1)
         }
     }
 }
