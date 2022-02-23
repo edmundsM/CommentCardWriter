@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56AF26D027C6DE52009326B4 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AF26CF27C6DE52009326B4 /* RootTabView.swift */; };
+		56AF26D427C6DF2B009326B4 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AF26D327C6DF2B009326B4 /* EditorView.swift */; };
 		F80850EF27B282E600DCBBBC /* CommentCardWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80850EE27B282E600DCBBBC /* CommentCardWriterApp.swift */; };
 		F80850F127B282E600DCBBBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80850F027B282E600DCBBBC /* ContentView.swift */; };
 		F80850F327B282E800DCBBBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80850F227B282E800DCBBBC /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56AF26CF27C6DE52009326B4 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		56AF26D327C6DF2B009326B4 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 		F80850EB27B282E600DCBBBC /* CommentCardWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentCardWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80850EE27B282E600DCBBBC /* CommentCardWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterApp.swift; sourceTree = "<group>"; };
 		F80850F027B282E600DCBBBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +77,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56AF26CC27C6DE1D009326B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F80850F027B282E600DCBBBC /* ContentView.swift */,
+				56AF26D327C6DF2B009326B4 /* EditorView.swift */,
+				56AF26CF27C6DE52009326B4 /* RootTabView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F80850E227B282E600DCBBBC = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				F80850EE27B282E600DCBBBC /* CommentCardWriterApp.swift */,
-				F80850F027B282E600DCBBBC /* ContentView.swift */,
+				56AF26CC27C6DE1D009326B4 /* View */,
 				F80850F227B282E800DCBBBC /* Assets.xcassets */,
 				F80850F427B282E800DCBBBC /* Preview Content */,
 				F8DD3B9A27B2843200EA35F9 /* CommentCard.swift */,
@@ -262,7 +276,9 @@
 			files = (
 				F80850F127B282E600DCBBBC /* ContentView.swift in Sources */,
 				F8DD3B9B27B2843200EA35F9 /* CommentCard.swift in Sources */,
+				56AF26D027C6DE52009326B4 /* RootTabView.swift in Sources */,
 				F80850EF27B282E600DCBBBC /* CommentCardWriterApp.swift in Sources */,
+				56AF26D427C6DF2B009326B4 /* EditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
